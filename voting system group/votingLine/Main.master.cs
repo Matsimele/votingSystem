@@ -16,7 +16,7 @@ public partial class Main : System.Web.UI.MasterPage
             {
                 lblLogin.Visible = true;
                 LinkButton1.Text = "Log Out";
-                //Redireting Accordingly
+                //Redirecting Accordingly
                 if (HttpContext.Current.Session["role"].ToString() == "Voter")
                 {
                     HyperLinkCast.Visible = true;
